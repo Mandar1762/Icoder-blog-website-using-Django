@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Home {% endblock %}
+{% block homeactive %} active {% endblock %}
+{% block body %}
+
+<div class="container my-3">
+
+    <div class="jumbotron">
+            <h1 class="display-4 ">Welcome to iCoder!</h1>
+            <p class="lead my-3">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <a class="btn btn-outline-info btn-lg my-3" href="/blogger" role="button">Go to Blog</a>
+    </div>
+</div>
+
+    <div class="container mt-3">
+        <h3> Blogposts:</h3>
+<div class="row my-2">
+    <div class="col-md-12 my-3">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+
+      </div>
+    </div>
+</div>
+    </div>
+
+{% endblock %}
